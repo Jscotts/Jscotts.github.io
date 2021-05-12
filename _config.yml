@@ -1,5 +1,5 @@
-name: Typora Support
-url: https://support.typora.io
+name: Blog
+url: https://jscotts.github.io
 description: Docs, How-Tos, and FAQs for typora
 
 permalink: /:title/
@@ -35,7 +35,8 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      cover_img: "http://typora.io/img/twitter-sum.png"
+      cover_img: "{% unless post.draft %}
+		{% assign title = post.title %}"
       twitter_card: "summary"
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile', 'vendor']
