@@ -35,6 +35,9 @@ title: Blog
 					<header class="post-header">
 						<span class="title"><a itemprop="name" href="{{ post.url | prepend: site.github.url | prepend: site.baseurl}}" title="{{ title }}">{{ title }}</a></span>
 						<time class="date">{% for tag in post.tags %}{{ tag }}{% unless tag == post.tags.last %}, {% endunless %}{% endfor %}</time>
+					<div class="article-image hide">
+            <img class="project-image" src="https://d33wubrfki0l68.cloudfront.net/7aaa884af33eace95ae69cec6e7b976a7c231f06/27994/assets/images/projects/op-olabf.gif">
+        </div>
 					</header>
 				</article>
 			</div>
